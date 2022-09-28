@@ -6,10 +6,9 @@ function Introduction () {
     return(
         <section className={styles.container}>
             <p className={styles.text}>
-                Random text can appear here. 
-                This doesn't hold any special meaning at all
-                Just trying to make this text box a little bit
-                bigger
+                Never forget who you were yesterday.
+                We continue to strive to achieve our 
+                dreams. So becoming better is the first step
             </p>
             <p className={styles.imageCredit}>
                 Image from  
