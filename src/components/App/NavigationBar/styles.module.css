@@ -1,0 +1,52 @@
+.navigation{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+}
+
+.line{
+    border: 1px solid black;
+}
+
+.sideMenu{
+    position: absolute;
+    top: 0px;
+    left: -100%;
+    padding: 1.3rem;
+    width: 200px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.863);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: left 0.2s ease-in;
+}
+
+.home, .about, .contact {
+    color: white;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.home:hover, .about:hover, .contact:hover {
+    color: rgb(209, 209, 209);
+}
+
+.close{
+    color: white;
+    align-self: flex-end;
+    font-size: 1.4rem;
+    cursor:pointer;
+}
+
