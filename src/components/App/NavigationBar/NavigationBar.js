@@ -13,7 +13,8 @@ function NavigationBar() {
     }
 
     const closeMenu = () => {
-        document.querySelector("." + styles.sideMenu).style.left = "-100%";
+        const sideMenu = document.querySelector("." + styles.sideMenu);
+        sideMenu.style.left = "-100%";
     }
 
     return(
