@@ -1,0 +1,33 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-content: center;
+    width: 1400px;
+    margin: auto;
+    padding: 50px;
+}
+
+.textbox{
+    font-family: sans-serif;
+    padding: 1.5rem; 
+    width: 400px;
+    display: block;
+    margin: auto;
+    position: relative;
+}
+
+.background{
+    width: 80%;
+    display: block;
+    margin: auto;
+    background-color: rgb(236, 236, 236);
+}
+
+.textbox:before{
+    font-weight: bold;
+    font-size: 1.4rem;
+    position: absolute;
+    left: -30px;
+    top: 21px;
+    content: attr(data-value) ' ';
+}

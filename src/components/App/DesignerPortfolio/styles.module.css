@@ -1,0 +1,9 @@
+.container{
+    display: grid;
+}
+
+.header{
+    display: block;
+    width: 500px;
+    margin: auto;
+}
