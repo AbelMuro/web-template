@@ -1,0 +1,48 @@
+.container{
+    background-image: url('./images/cloud background.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2.5rem;
+}
+
+.text{
+    color: white;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    width: 300px;
+    font-weight: bold;
+}
+
+.imageCredit{
+    color: white;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    width: 300px;
+    font-weight: bold;
+}
+
+.freepik{
+    text-decoration-line: underline;
+    color: white;
+    font-weight: bold;
+}
+
+.freepik:hover{
+    color: grey;
+}
+
+.purpleBox {
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 2.3rem;
+    background-color: #9884a9;
+    padding: 1.5rem;
+    color: white;
+    font-weight: bold;
+    width: 500px;
+}
