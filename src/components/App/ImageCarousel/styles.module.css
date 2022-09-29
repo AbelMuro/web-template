@@ -1,26 +1,25 @@
-.background{
-    
-}
 
 .container{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 40px;
+    width: 600px;
 }
 
 .window{
-    position: relative;
     overflow: hidden;
+    width: 400px;
 }
 
 .tracker{
-    position: absolute;
+    display: flex;
 }
 
 
 .slideContainer{
-    width: 400px;
+    width: 600px;
     height: auto;
     display: flex;
     flex-direction: column;

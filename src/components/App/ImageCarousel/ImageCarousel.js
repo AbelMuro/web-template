@@ -18,8 +18,8 @@ function ImageCarousel(){
     return(
         <section className={styles.background}>
             <div className={styles.container}>
-                <div className={styles.window}>
 
+                <div className={styles.window}>
                     <div className={styles.tracker} ref={allSlides}>
                         <div className={[styles.slideContainer, styles.currentSlide].join(" ")}>
                             <img src={referenceOne} className={styles.slideImage}/>
@@ -52,8 +52,8 @@ function ImageCarousel(){
                             </p>
                         </div>
                     </div>
-
                 </div>
+                
             </div>
             <div className={styles.dotNav}>
                 <div className={styles.dot}></div>
