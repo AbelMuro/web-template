@@ -7,9 +7,8 @@ function Introduction () {
         <section className={styles.background}>
             <div className={styles.container}>
                 <p className={styles.text}>
-                    Never forget who you were yesterday.
-                    We continue to strive to achieve our 
-                    dreams. So becoming better is the first step
+                    Sample text. Click to select the text box. 
+                    Click again or double click to start editing the text.
                 </p>
                 <p className={styles.imageCredit}>
                     Image from  
@@ -19,9 +18,8 @@ function Introduction () {
                     </a>
                 </p>
                 <h1 className={styles.purpleBox}>
-                    We help people strive to become better.
-                    Tomorrow is a version of you that will 
-                    surpass you today. Hold on to that ideal.
+                    We design People Inspired Experiences 
+                    that create positive change in people's lives.
                 </h1>
             </div>
 

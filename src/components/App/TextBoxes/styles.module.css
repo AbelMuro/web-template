@@ -7,13 +7,14 @@
     padding: 50px;
 }
 
-.textbox{
-    font-family: sans-serif;
+.textbox{   
+    font-family: 'Open Sans', sans-serif;
     padding: 1.5rem; 
     width: 400px;
     display: block;
     margin: auto;
     position: relative;
+    color: #666666
 }
 
 .background{

@@ -7,52 +7,46 @@ function TextBoxes() {
         <ol className={styles.container}>
             <div className={styles.background}>
                 <li data-value="1" className={styles.textbox}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Recruitment Agency that strives to help businesses 
+                put together a staff of highly efficient and skilled 
+                professionals, and also serve employees by opening up 
+                new vistas of job opportunities for them.
                 </li>
             </div>
                 <li data-value="2" className={styles.textbox}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Recruitment Agency that strives to help businesses 
+                put together a staff of highly efficient and skilled 
+                professionals, and also serve employees by opening up 
+                new vistas of job opportunities for them.
                 </li>                
 
                 <li data-value="3" className={styles.textbox}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Recruitment Agency that strives to help businesses 
+                put together a staff of highly efficient and skilled 
+                professionals, and also serve employees by opening up 
+                new vistas of job opportunities for them.
                 </li>                
 
 
                 <li data-value="4" className={styles.textbox}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Recruitment Agency that strives to help businesses 
+                put together a staff of highly efficient and skilled 
+                professionals, and also serve employees by opening up 
+                new vistas of job opportunities for them.
                 </li>                
 
                 <li data-value="5" className={styles.textbox}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Recruitment Agency that strives to help businesses 
+                put together a staff of highly efficient and skilled 
+                professionals, and also serve employees by opening up 
+                new vistas of job opportunities for them.
                 </li>                
             <div className={styles.background}>
                 <li data-value="6" className={styles.textbox}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Recruitment Agency that strives to help businesses 
+                put together a staff of highly efficient and skilled 
+                professionals, and also serve employees by opening up 
+                new vistas of job opportunities for them.
                 </li>                
             </div>
         </ol>
