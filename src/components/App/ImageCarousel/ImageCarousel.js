@@ -1,5 +1,5 @@
 import React, {useEffect, useRef} from 'react';
-import styles from 'styles.module.css';
+import styles from './styles.module.css';
 import referenceOne from './images/referenceOne.png';
 import referenceTwo from './images/referenceTwo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -16,11 +16,12 @@ function ImageCarousel(){
 
 
     return(
-        <section>
+        <section className={styles.background}>
             <div className={styles.container}>
-                <div className={styles.window} ref={allSlides}>
-                    <div className={styles.slide}>
-                        <div className={(styles.slideContainer, styles.currentSlide).join(" ")}>
+                <div className={styles.window}>
+
+                    <div className={styles.tracker} ref={allSlides}>
+                        <div className={[styles.slideContainer, styles.currentSlide].join(" ")}>
                             <img src={referenceOne} className={styles.slideImage}/>
                             <p className={styles.desc}>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -35,7 +36,7 @@ function ImageCarousel(){
                                 President, CEO
                             </p>
                         </div>
-                        <div className={styles.slide}>
+                        <div className={styles.slideContainer}>
                             <img src={referenceTwo} className={styles.slideImage}/>
                             <p className={styles.desc}>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -51,6 +52,7 @@ function ImageCarousel(){
                             </p>
                         </div>
                     </div>
+
                 </div>
             </div>
             <div className={styles.dotNav}>

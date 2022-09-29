@@ -3,6 +3,7 @@ import NavigationBar from './NavigationBar';
 import Introduction from './Introduction';
 import TextBoxes from './TextBoxes';
 import DesignerPortfolio from './DesignerPortfolio';
+import ImageCarousel from './ImageCarousel';
 import './styles.css';
 
 function App(){
@@ -13,6 +14,7 @@ function App(){
         <Introduction/>
         <TextBoxes/>
         <DesignerPortfolio/>
+        <ImageCarousel/>
     </>
     )
 
