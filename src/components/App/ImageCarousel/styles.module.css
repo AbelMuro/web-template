@@ -1,0 +1,49 @@
+.window{
+    position: relative;
+    overflow: hidden;
+}
+
+.slide{
+    position: absolute;
+}
+
+
+.slideContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.slideImage{
+    object-fit: contain;
+    width: 100px; 
+}
+
+.desc, .title, .position {
+    color: #111111;
+}
+
+.title, .position {
+    font-family: 'Roboto', sans-serif;
+}
+
+.desc{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+}
+
+.title{
+    font-size: 24px
+}
+
+.position{
+    font-size: 14px;
+}
+
+.dot{
+    background-color: #b3b3b3;
+    width: 20px;
+}
