@@ -37,6 +37,8 @@ function ImageCarousel(){
     const changeSlideBasedOnDot = (e) => {
         let moveTrackerThisAmount;
         let clickedDot = e.target.closest("." + styles.dot);
+        if(!clickedDot) return;
+        
         moveTrackerThisAmount = clickedDot.getAttribute("data-position");
         tracker.current.style.left = moveTrackerThisAmount + "px";
 
