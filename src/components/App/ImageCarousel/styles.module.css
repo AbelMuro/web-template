@@ -36,6 +36,7 @@
     height: 500px;              /* including the sum of the width and the padding of slide*/
 }
 
+
 .tracker{
     display: flex;
     top: 20px;

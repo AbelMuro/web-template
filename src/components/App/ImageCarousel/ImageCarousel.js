@@ -40,12 +40,15 @@ function ImageCarousel(){
         moveTrackerThisAmount = clickedDot.getAttribute("data-position");
         tracker.current.style.left = moveTrackerThisAmount + "px";
 
-        const allSlides = Aray.from(tracker.current.children);
+        const allSlides = Array.from(tracker.current.children);
         allSlides.forEach((slide) => {
             if(slide.classList.contains("." + styles.currentSlide)){
                 slide.classList.remove("." + styles.currentSlide)
             }
-
+        })
+        allSlides.forEach((slide) => {
+            if(slide.getAttribute("data-position") == clickedDot.getAttribute("data-position"))
+                slide.classList.add(styles.currentSlide)
         })
 
         

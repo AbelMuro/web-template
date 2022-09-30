@@ -8,7 +8,7 @@ function NavigationBar() {
 
     const displayMenu = () => {
         const sideMenu = document.querySelector("." + styles.sideMenu);
-        sideMenu.style.left =  "0px";
+        sideMenu.style.left = "0px";
         
     }
 

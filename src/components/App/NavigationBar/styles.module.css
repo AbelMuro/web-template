@@ -19,7 +19,7 @@
 }
 
 .sideMenu{
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: -100%;
     padding: 1.3rem;
@@ -30,7 +30,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    transition: left 0.6s ease-in;
+    transition: left 0.6s 0s ease-in;
 }
 
 .home, .about, .contact {
