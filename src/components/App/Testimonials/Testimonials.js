@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faArrowLeft, faArrowRight} from '@fortawesome/free-solid-svg-icons';
 
 
-function ImageCarousel(){
+function Testimonials(){
     const tracker = useRef();
 
     function moveTracker(currentSlide, prevOrNextSlide) {
@@ -126,4 +126,4 @@ function ImageCarousel(){
 
 }
 
-export default ImageCarousel;
+export default Testimonials;

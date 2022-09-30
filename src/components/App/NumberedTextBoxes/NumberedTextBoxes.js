@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './styles.module.css';
 
-function TextBoxes() {
+function NumberedTextBoxes() {
 
     return(
         <ol className={styles.container}>
@@ -53,4 +53,4 @@ function TextBoxes() {
     )
 }
 
-export default TextBoxes;
+export default NumberedTextBoxes;

@@ -1,0 +1,41 @@
+.background{
+    width: 100%;
+    background-color: #f8f8f8;
+}
+.container{
+    width: 1250px;
+    height: 600px;
+    padding: 80px 0px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+
+}
+
+.innerContainer{
+    display: flex;
+}
+
+.title, .textBoxOne, .textBoxTwo{
+    font-family: "Playfair Display", serif;
+    color: #111111; 
+}
+
+.title{    
+    margin: 50px 0px;
+    font-size: 48px;
+    width: 600px;
+}
+
+.textBoxOne{
+    margin: 50px 50px 50px 0px;
+    font-size: 24px;
+    width: 520px;
+    font-weight: bold;
+}
+
+.textBoxTwo{
+    margin: 50px 0px;
+    font-size: 16px;
+    width: 480px;
+}

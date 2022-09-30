@@ -1,0 +1,56 @@
+.container{
+    height: auto;
+    background-image: url("./images/paint splash.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.imageCollection{
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.title{
+    grid-column: 1/4;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-size: 48px;
+    color: #111111;
+
+}
+
+.imageBox{
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.imageItem{
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+    cursor: pointer;
+    transition: transform 0.4s ease-in;
+}
+
+.imageItem:hover{
+    transform: scale(1.2, 1.2);
+}
+
+.imagesFromFreePik{
+    font-family: "Opens Sans", serif;
+    font-size: 16px;
+    color: #111111;
+    grid-column: 1/4;
+    text-align: center;
+}
+
+.button{
+    grid-column: 1/4;
+    width: 300px;
+    justify-self: center;
+}

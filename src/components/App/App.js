@@ -1,9 +1,11 @@
 import React from 'react';
 import NavigationBar from './NavigationBar';
 import Introduction from './Introduction';
-import TextBoxes from './TextBoxes';
+import NumberedTextBoxes from './NumberedTextBoxes';
 import DesignerPortfolio from './DesignerPortfolio';
-import ImageCarousel from './ImageCarousel';
+import Testimonials from './Testimonials';
+import EleganceTextSection from './EleganceTextSection';
+import BuildProductsSection from './BuildProductsSection';
 import './styles.css';
 
 function App(){
@@ -12,9 +14,11 @@ function App(){
     <>
         <NavigationBar/>
         <Introduction/>
-        <TextBoxes/>
+        <NumberedTextBoxes/>
         <DesignerPortfolio/>
-        <ImageCarousel/>
+        <Testimonials/>
+        <EleganceTextSection/>
+        <BuildProductsSection/>
     </>
     )
 
