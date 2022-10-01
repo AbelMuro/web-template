@@ -138,6 +138,7 @@ function DesignerPortfolio() {
                         </p>
                     </div>
                 </div>
+                
                 <ThemeProvider theme={theme}>
                     <Button variant="contained" color="purple" className={styles.MUIbutton}>DOWNLOAD CV</Button> 
                 </ThemeProvider>

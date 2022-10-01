@@ -9,6 +9,10 @@
     list-style-type: none;
 }
 
+.overflow{
+    overflow: hidden;
+}
+
 .gridItem{
     display: flex;
     justify-content: space-evenly;

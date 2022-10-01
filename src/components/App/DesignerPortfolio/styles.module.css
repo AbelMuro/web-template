@@ -2,6 +2,7 @@
     display: block;
     margin: auto;
     width: 1000px;
+    overflow: hidden;
 }
 
 .container{
@@ -11,6 +12,7 @@
     align-content: center;
     column-gap: 30px;
     width: 850px;
+    margin: auto;
     padding: 50px;
 }
 
@@ -82,7 +84,6 @@
     width: 550px;
 }
 
-
 .statsTitle{
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
@@ -94,7 +95,6 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 72px;
     color: #9884a9;
-
 }
 
 #socialMedia{
@@ -115,14 +115,56 @@
     align-self: flex-end;
 }
 
+@media (max-width: 1055px){
+    .MUIbutton{
+        width:100%;
+    }
+}
+
 @media (max-width: 965px) {
+    .outerContainer{
+        width: 80%;
+    }
+    .container{
+        width: 100%;
+        grid-template-rows: 51.813471502590666vw;
+        padding-left: 0px;
+    }
+    .designerInfo{
+        width: 100%
+    }
+    .designerImage{
+        width: 100%;
+        height: auto;
+    }
+    .stats {
+        width: 100%;
+        column-gap: 10.362694300518134vw;
+    }
+}
+
+@media (max-width: 680px){
     .outerContainer{
         width: 100%;
     }
 
-    .container{
-        grid-template-columns: repeat(1, minmax(0, 1fr));
+    .header{
         width: 100%;
+    }
+
+    .greeting{
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    .desc{
+        width: 100%;
+    }
+
+    .container{
+        margin: auto;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        width: 340px;
         padding-left: 0px;
         padding-right: 0px;
     }
@@ -130,6 +172,25 @@
     .designerInfo{
        display: block;
        margin: auto;
-       width: 400px;
+       width: 320px;
+       padding: 10px 10px;
+    }
+
+    .designerImage{
+        margin: 20px 0px;
+        height: 250px;
+        width: initial;
+    }
+
+    .stats{
+        width: 100%;
+        row-gap: 100px;
+        padding: 30px 0px 50px 0px;
+    }
+
+    .awardsWon, .xpYears, .clients, .projects{
+        margin: auto;
+        display: block;
+        width: auto;
     }
 }

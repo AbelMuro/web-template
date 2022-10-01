@@ -3,6 +3,7 @@
     background-position: center;
     background-size: cover;
     width: 100%;
+    overflow: hidden;
 }
 
 .container{
@@ -76,5 +77,11 @@
     .purpleBox{
         width: 350px;
         font-size: 30px;
+    }
+}
+
+@media (max-width: 450px) {
+    .purpleBox{
+        width: 250px;
     }
 }

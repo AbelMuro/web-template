@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, {useEffect, useRef} from 'react';
 import styles from './styles.module.css';
 import referenceOne from './images/referenceOne.png';
 import referenceTwo from './images/referenceTwo.png';
@@ -13,8 +13,8 @@ function Testimonials(){
         let newTrackerPosition;
         currentSlide.classList.remove(styles.currentSlide)
         prevOrNextSlide.classList.add(styles.currentSlide);
-        newTrackerPosition = prevOrNextSlide.getAttribute("data-position");  
-        tracker.current.style.left = newTrackerPosition + "px";
+        newTrackerPosition = getComputedStyle(prevOrNextSlide).left
+        tracker.current.style.left = newTrackerPosition;
     }
 
     const changeSlide = (e) => {
@@ -39,22 +39,32 @@ function Testimonials(){
         let clickedDot = e.target.closest("." + styles.dot);
         if(!clickedDot) return;
         
-        moveTrackerThisAmount = clickedDot.getAttribute("data-position");
-        tracker.current.style.left = moveTrackerThisAmount + "px";
+        moveTrackerThisAmount = getComputedStyle(clickedDot).left;
+        tracker.current.style.left = moveTrackerThisAmount;
 
         const allSlides = Array.from(tracker.current.children);
+
         allSlides.forEach((slide) => {
-            if(slide.classList.contains("." + styles.currentSlide)){
-                slide.classList.remove("." + styles.currentSlide)
-            }
-        })
-        allSlides.forEach((slide) => {
-            if(slide.getAttribute("data-position") == clickedDot.getAttribute("data-position"))
-                slide.classList.add(styles.currentSlide)
+            slide.classList.remove(styles.currentSlide)
         })
 
-        
+        allSlides.forEach((slide) => {
+            if(getComputedStyle(slide).left == getComputedStyle(clickedDot).left){
+                 slide.classList.add(styles.currentSlide);
+            }
+        })
     }
+
+    const onResize = () => {
+        if(tracker.current.style.left != "0px")
+            tracker.current.style.left = '0px';
+    }
+
+    useEffect(() => {
+        window.addEventListener("resize", onResize);
+
+        return () => {window.removeEventListener("resize", onResize)}
+    })
 
     return(
         <section className={styles.background}>
@@ -66,7 +76,7 @@ function Testimonials(){
 
                 <div className={styles.window}>
                     <div className={styles.tracker} ref={tracker}>
-                        <div data-position={0} className={[styles.slide, styles.currentSlide].join(" ")}>
+                        <div className={[styles.slide, styles.currentSlide].join(" ")} id={styles.slidePositionOne}>
                             <img src={referenceOne} className={styles.slideImage}/>
                             <p className={styles.desc}>
                                 "Lorem ipsum dolor sit amet, 
@@ -83,7 +93,7 @@ function Testimonials(){
                                 President, CEO
                             </p>
                         </div>
-                        <div data-position={-500} className={styles.slide}>
+                        <div className={styles.slide} id={styles.slidePositionTwo}>
                             <img src={referenceTwo} className={styles.slideImage}/>
                             <p className={styles.desc}>
                                 "Lorem ipsum dolor sit amet, 
@@ -115,8 +125,8 @@ function Testimonials(){
                 </div>
 
                 <div className={styles.dotNav} onClick={changeSlideBasedOnDot}>
-                    <div className={styles.dot} data-position={0}></div>
-                    <div className={styles.dot} data-position={-500}></div>
+                    <div className={styles.dot} id={styles.slidePositionOne}></div>
+                    <div className={styles.dot} id={styles.slidePositionTwo}></div>
                 </div> 
             
             </div>

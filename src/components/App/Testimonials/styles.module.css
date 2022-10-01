@@ -59,6 +59,14 @@
 }
 
 
+#slidePositionOne{
+    left: 0px;                          /* these values are used to move each slide a certain amount of pixes*/
+}
+
+#slidePositionTwo{
+    left: -500px;                        /* these values are used to move each slide a certain amount of pixes*/
+}
+
 
 .slideImage{
     object-fit: contain;
@@ -143,13 +151,71 @@
 }
 
 .currentSlide{
-    color: none;
+    color: none;            /* just placeholders*/
 }
 
 .currentDot{
-    color: none;
+    color: none;             /* just placeholders*/
 }
 
 .eventBubbling {
     pointer-events: none;
+}
+
+@media(max-width: 680px){
+    .container, .window{
+        width: 300px;
+        height: 550px;
+    }
+
+    .arrowBackgroundRight{
+        right: -60px
+    }
+
+    .arrowBackgroundLeft{
+        left: -60px;
+    }
+
+    .slide{
+        width: 300px;
+        height: 100%;
+        padding: 0px;
+    }
+
+    #slidePositionOne{
+        left: 0px
+    }
+
+    #slidePositionTwo{
+        left: -300px
+    }
+    .tracker{
+        top: 80px;
+    }
+
+    .desc{
+        width:250px;
+    }
+}
+
+@media (max-width: 445px){
+    .container, .window{
+        width: 230px;
+        height: 570px;
+    }
+    .slide{
+        width: 230px;
+        height: 100%;
+        padding: 0px;
+    }
+    .desc{
+        width: 200px;
+    }
+    #slidePositionOne{
+        left: 0px
+    }
+
+    #slidePositionTwo{
+        left: -230px
+    }
 }
