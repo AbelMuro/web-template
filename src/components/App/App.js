@@ -6,7 +6,8 @@ import DesignerPortfolio from './DesignerPortfolio';
 import Testimonials from './Testimonials';
 import EleganceTextSection from './EleganceTextSection';
 import BuildProductsSection from './BuildProductsSection';
-import './styles.css';
+import ThankYou from './ThankYou';
+import styles from './styles.css';
 
 function App(){
 
@@ -19,6 +20,7 @@ function App(){
         <Testimonials/>
         <EleganceTextSection/>
         <BuildProductsSection/>
+        <ThankYou/>
     </>
     )
 

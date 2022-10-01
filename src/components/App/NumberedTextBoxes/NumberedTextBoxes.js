@@ -4,52 +4,79 @@ import styles from './styles.module.css';
 function NumberedTextBoxes() {
 
     return(
-        <ol className={styles.container}>
-            <div className={styles.background}>
-                <li data-value="1" className={styles.textbox}>
-                Recruitment Agency that strives to help businesses 
-                put together a staff of highly efficient and skilled 
-                professionals, and also serve employees by opening up 
-                new vistas of job opportunities for them.
+        <ul className={styles.container}>
+                <li className={[styles.gridItem, styles.background].join(" ")}>
+                    <p className={styles.number}>
+                        1
+                    </p>
+                    <p className={styles.textbox}>
+                        Recruitment Agency that strives to help businesses 
+                        put together a staff of highly efficient and skilled 
+                        professionals, and also serve employees by opening up 
+                        new vistas of job opportunities for them.                        
+                    </p>
+
                 </li>
-            </div>
-                <li data-value="2" className={styles.textbox}>
-                Recruitment Agency that strives to help businesses 
-                put together a staff of highly efficient and skilled 
-                professionals, and also serve employees by opening up 
-                new vistas of job opportunities for them.
+                <li className={styles.gridItem}>
+                    <p className={styles.number}>
+                        2
+                    </p>
+                    <p className={styles.textbox}>
+                        Recruitment Agency that strives to help businesses 
+                        put together a staff of highly efficient and skilled 
+                        professionals, and also serve employees by opening up 
+                        new vistas of job opportunities for them.                        
+                    </p>
+                </li>                
+                <li className={styles.gridItem}>
+                    <p className={styles.number}>
+                        3
+                    </p>
+                    <p className={styles.textbox}>
+                        Recruitment Agency that strives to help businesses 
+                        put together a staff of highly efficient and skilled 
+                        professionals, and also serve employees by opening up 
+                        new vistas of job opportunities for them.                        
+                    </p>
+                </li>                
+                <li className={styles.gridItem}>
+                    <p className={styles.number}>
+                        4
+                    </p>
+                    <p className={styles.textbox}>
+                        Recruitment Agency that strives to help businesses 
+                        put together a staff of highly efficient and skilled 
+                        professionals, and also serve employees by opening up 
+                        new vistas of job opportunities for them.                        
+                    </p>
+
                 </li>                
 
-                <li data-value="3" className={styles.textbox}>
-                Recruitment Agency that strives to help businesses 
-                put together a staff of highly efficient and skilled 
-                professionals, and also serve employees by opening up 
-                new vistas of job opportunities for them.
-                </li>                
+                <li className={styles.gridItem}>
+                    <p className={styles.number}>
+                        5
+                    </p>
+                    <p className={styles.textbox}>
+                        Recruitment Agency that strives to help businesses 
+                        put together a staff of highly efficient and skilled 
+                        professionals, and also serve employees by opening up 
+                        new vistas of job opportunities for them.                        
+                    </p>
 
+                </li>                
+                <li className={[styles.gridItem, styles.background].join(" ")}>
+                    <p className={styles.number}>
+                        6
+                    </p>
+                    <p className={styles.textbox}>
+                        Recruitment Agency that strives to help businesses 
+                        put together a staff of highly efficient and skilled 
+                        professionals, and also serve employees by opening up 
+                        new vistas of job opportunities for them.                        
+                    </p>
 
-                <li data-value="4" className={styles.textbox}>
-                Recruitment Agency that strives to help businesses 
-                put together a staff of highly efficient and skilled 
-                professionals, and also serve employees by opening up 
-                new vistas of job opportunities for them.
                 </li>                
-
-                <li data-value="5" className={styles.textbox}>
-                Recruitment Agency that strives to help businesses 
-                put together a staff of highly efficient and skilled 
-                professionals, and also serve employees by opening up 
-                new vistas of job opportunities for them.
-                </li>                
-            <div className={styles.background}>
-                <li data-value="6" className={styles.textbox}>
-                Recruitment Agency that strives to help businesses 
-                put together a staff of highly efficient and skilled 
-                professionals, and also serve employees by opening up 
-                new vistas of job opportunities for them.
-                </li>                
-            </div>
-        </ol>
+        </ul>
     )
 }
 

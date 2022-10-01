@@ -1,6 +1,6 @@
 .background{
-    height: 600px;
-    padding: 40px;
+    height: 800px;
+    padding: 0px 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,7 +11,7 @@
 }
 
 .testimonials{
-    padding: 40px;
+    padding: 0px 40px 40px 40px;
     color: white;
     font-size: 48px;
     font-family: "Playfair Display", serif;
@@ -20,7 +20,7 @@
 .container{
     background-color: white;
     position: relative;
-    margin: auto;
+    margin: 30px auto;
     display: flex;
     justify-content: center;
     align-items: center;

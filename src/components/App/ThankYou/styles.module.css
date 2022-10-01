@@ -1,0 +1,25 @@
+.background{
+    background-image: url("./images/ocean waves.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    backdrop-filter: grayscale(100%);
+}
+
+.thankYou{
+    padding: 50px;
+    border: 5px solid #9884a9;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+}
+
+.text{
+    color: white;
+    font-size: 96px;
+    font-family: "Playfair Display", serif;
+}

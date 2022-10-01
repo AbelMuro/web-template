@@ -47,7 +47,7 @@ function BuildProductsSection() {
                     <img src={imageSix} className={styles.imageItem}/>  
                 </div>
                 <p className={styles.imagesFromFreePik}>
-                    Images from
+                    Images from&nbsp;
                     <a className={styles.link}>
                         Freepik
                     </a>

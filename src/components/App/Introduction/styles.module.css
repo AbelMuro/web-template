@@ -8,13 +8,13 @@
 .container{
     display: block;
     margin: auto;
-    width: 1260px;
+    width: 1000px;
     height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 50px;
+    padding: 50px 0px;
 }
 
 .text{
@@ -48,11 +48,33 @@
 
 .purpleBox {
     font-family: 'Playfair Display', serif;
-    font-size: 3.3rem;
-    line-height: 60px;
+    font-size: 60px;
+    line-height: 65px;
     background-color: #9884a9;
     padding: 2.5rem;
     color: white;
     font-weight: 900;
-    width: 700px;
+    width: 650px;
+}
+
+@media (max-width: 860px){
+    .container{
+        width: 100%;
+        padding: 10px 40px;
+    }
+    .purpleBox{
+        padding: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 500px;
+        font-size: 40px;
+        line-height: 45px;
+    }
+}
+
+@media (max-width: 600px) {
+    .purpleBox{
+        width: 350px;
+        font-size: 30px;
+    }
 }

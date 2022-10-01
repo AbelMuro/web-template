@@ -1,7 +1,7 @@
 .outerContainer{
     display: block;
     margin: auto;
-    width: 1250px;
+    width: 1000px;
 }
 
 .container{
@@ -113,4 +113,23 @@
     width: 500px;
     height: 50px;
     align-self: flex-end;
+}
+
+@media (max-width: 965px) {
+    .outerContainer{
+        width: 100%;
+    }
+
+    .container{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .designerInfo{
+       display: block;
+       margin: auto;
+       width: 400px;
+    }
 }
